@@ -31,7 +31,7 @@ const UpdateTable = () => {
 ];
   return (
     <>
-    <div class='Update-table'>
+    <div className='Update-table'>
       <table>
             <caption>업데이트 사항</caption>
             <thead>

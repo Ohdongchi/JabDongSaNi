@@ -9,6 +9,7 @@ module.exports = {
     hot:true,
     inline:true,
     host:'0.0.0.0',
+    // host:'dongchi.kro.kr',
     port:'3000',
     contentBase:__dirname + "/public"
   },
@@ -38,6 +39,6 @@ module.exports = {
   plugins: [new webpack.LoaderOptionsPlugin({ debug: true })],
   output: {
     filename: "app.js",
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "/dist"),
   }, // 출력
 };

@@ -21,11 +21,11 @@ export default () => {
     if (error) return (<h1>Error ! {error}</h1>);
 
     return (
-        <div class='inquiry-table'>
-            <div class='modal-container'>
+        <div className='inquiry-table'>
+            <div className='modal-container'>
                 <div name='place'>
                     <h3>지역검색</h3>
-                    <div class='drop-down'>
+                    <div className='drop-down'>
                         <select onchange="chg(this)">
                             <option value="" selected disabled hidden>시/도</option>
                             <option value="서울">서울</option>
@@ -55,7 +55,7 @@ export default () => {
                 <div name='date'>
                     <h3>날짜검색</h3>
 
-                    <div class='drop-down'>
+                    <div className='drop-down'>
                         <select name="시/도">
                             <option value="" selected disabled hidden>검색구분</option>
                             <option value="작성일">작성일</option>
@@ -69,10 +69,10 @@ export default () => {
                     </p>
                 </div>
                 <hr/>
-                <div class='modal-container-ccbtn'>
+                <div className='modal-container-ccbtn'>
                     <input type='button' name='cancle' value="취소" onclick="showModal(this);" />
                 </div>
-                <div class='modal-container-sbbtn'>
+                <div className='modal-container-sbbtn'>
                     <input type='button' name='submit' value="전송" onclick="showModal(this);" />
                 </div>
             </div>

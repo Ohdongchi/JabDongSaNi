@@ -1,16 +1,25 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import {BrowserRouter} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Link,Switch} from 'react-router-dom';
 import {hot} from 'react-hot-loader/root';
-import App from './page/App';
 
+import App from './page/App';
+import LoginBtn from './component/header/Login_btn';
 const Hot = hot(App);
 
+// ReactDom.render(
+//     <Router>
+//         <LoginBtn/>
+//     </Router>
+// ,document.querySelector('.header-login-btn'));
+
 ReactDom.render(
-    <BrowserRouter>    
-        <Hot/>
-    </BrowserRouter>
-    , document.querySelector('.content'));
+    <Router>
+        <App/>
+    </Router>
+    , document.querySelector('.root'));
+
+
 
 // @babel/core = 바벨 기본 = 최신 문법 바꿔주는 모듈
 // @babel/preset-env = 브라우저 환경에 맞게 문법을 바꿔주는 모듈

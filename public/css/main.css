@@ -1,0 +1,144 @@
+/* default setting */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header */
+header {
+  width: 100%;
+  position: relative;
+}
+
+/* 코로나 19 */
+.header-logo {
+  width: 100%;
+  height: 7vh;
+  line-height: 7vh;
+  /* padding-left: 3vw; */
+  color: white;
+  background-color: #333;
+}
+.header-logo > h3 {
+  position: absolute;
+  height: 7vh;
+  line-height: 7vh;
+  top: 0;
+  left: 2vw;
+}
+/* login */
+.header-login-btn {
+  position: absolute;
+  height: 7vh;
+  line-height: 7vh;
+  top: 0;
+  right: 2vw;
+}
+
+.header-login-btn > a > input {
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10%;
+  padding: 2px 5px;
+  display: inline-block;
+}
+
+/* content */
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+caption {
+  margin-left: 0.5rem;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* menu */
+.menu-btn table {
+  width: 100%;
+  height: 8vh;
+  line-height: 8vh;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.menu-btn table tr td {
+  width: 50%;
+  border: solid black;
+  border-width: 0 0 1px 1px;
+}
+
+.menu-btn table tr td:first-child {
+  width: 50%;
+  border-width: 0 1px 1px 0;
+}
+
+/* EveryDay-table */
+
+.EveryDay-table {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.EveryDay-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.EveryDay-table table tr td {
+  width: 30%;
+  height: 4vh;
+  border: 1px solid black;
+}
+
+/* accumulate-table */
+.Accumulate-table {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.Accumulate-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Accumulate-table table tr th,
+td {
+  width: 25%;
+  height: 5vh;
+  border: 1px solid black;
+}
+
+/* update-table */
+.Update-table {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.Update-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Update-table table tr th,
+td {
+  width: 25%;
+  height: 5vh;
+  border: 1px solid black;
+}
