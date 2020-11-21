@@ -1,0 +1,58 @@
+/* signUp page*/
+.signup-page {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.signup-page > .sign-form > div {
+  display: inline-block;
+}
+
+.signup-page > .sign-form > div > .sign-form-table {
+  margin: 0 auto;
+  border: none;
+  border-spacing: 3px 5px;
+}
+
+.signup-page > .sign-form > div > .sign-form-table > caption {
+  text-align: left;
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+.signup-page > .sign-form > div > .sign-form-table tr td:first-child {
+  width: 10em;
+  text-align: center;
+  background: rgb(155, 155, 155);
+  border: none;
+  border-radius: 3px;
+}
+
+.signup-page > .sign-form > div > .sign-form-table tr td:last-child {
+  width: 75%;
+  border: none;
+}
+
+.signup-page > .sign-form > div > .sign-form-table tr td:last-child > input {
+  width: 100%;
+  height: inherit;
+  line-height: 3vh;
+  padding: 2px 5px;
+  border: 2px solid rgba(204, 204, 204, 0.671);
+  border-radius: 3px;
+}
+
+/* btn */
+.sign-btn {
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+
+.sign-btn > input {
+  float: right;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(83, 158, 255);
+}
