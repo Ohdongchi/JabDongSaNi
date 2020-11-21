@@ -10,7 +10,7 @@ require("dotenv").config();
 
 const router = express.Router();
 
-router.post("/register", upload2.none(), async (req, res, next) => {
+router.post("/register",async (req, res, next) => {
     try {
       const exUser = await User.findOne({ where: { email: req.params.email } });
       if (exUser) {
@@ -18,12 +18,12 @@ router.post("/register", upload2.none(), async (req, res, next) => {
         return res.redirect("/");
       } else {
         const hash = await bcrypt.hash(req.body.password, 10);
-        await User.create({
-          email: req.body.email,
-          nick: req.body.name,
-          password: hash,
-          profile_image: req.body.ProfileUrl,
-        });
+        // await User.create({
+        //   email: req.body.email,
+        //   nick: req.body.name,
+        //   password: hash,
+        //   profile_image: req.body.ProfileUrl,
+        // });
         res.redirect("/");
       }
     } catch (error) {

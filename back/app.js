@@ -14,7 +14,8 @@ const cors = require('cors');
 const { sequelize } = require("./models");
 
 const apiRouter = require("./routes/api");
-const pageRouter = require('./routes/page');
+const authRouter = require("./routes/auth")
+const pageRouter = require("./routes/page");
 
 const app = express();
 sequelize.sync();

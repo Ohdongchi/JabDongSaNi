@@ -33,21 +33,26 @@ header {
 }
 /* login */
 .header-login-btn {
-  position: absolute;
+  width: 8em;
   height: 7vh;
   line-height: 7vh;
+  position: absolute;
   top: 0;
   right: 2vw;
+  display: flex;
+  justify-content: space-between;
 }
 
-.header-login-btn > a > input {
-  width: 100%;
-  font-size: 20px;
-  border-radius: 10%;
-  padding: 2px 5px;
+.header-login-btn > a {
+  width: auto;
+  font-size: 1em;
+  font-weight: bold;
   display: inline-block;
+  border-radius: 10%;
 }
-
+.header-login-btn > a > input {
+  padding: 2px 5px;
+}
 /* content */
 
 .content {

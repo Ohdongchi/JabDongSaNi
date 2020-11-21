@@ -4,14 +4,7 @@ import {BrowserRouter as Router,Route,Link,Switch} from 'react-router-dom';
 import {hot} from 'react-hot-loader/root';
 
 import App from './page/App';
-import LoginBtn from './component/header/Login_btn';
 const Hot = hot(App);
-
-// ReactDom.render(
-//     <Router>
-//         <LoginBtn/>
-//     </Router>
-// ,document.querySelector('.header-login-btn'));
 
 ReactDom.render(
     <Router>
