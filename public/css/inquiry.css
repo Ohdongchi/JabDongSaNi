@@ -1,83 +1,54 @@
 /* inquiry table */
 
 .inquiry-table {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 10px;
-    text-align: center;
-    position: relative;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  position: relative;
 }
 
 .inquiry-table table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .inquiry-table table th {
-    background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .inquiry-table table tr th,
 td {
-    width: 25%;
-    height: 5vh;
-    border: 1px solid black;
-    border-right: hidden;
-    border-left: hidden;
+  width: 25%;
+  height: 5vh;
+  border: 1px solid black;
+  border-right: hidden;
+  border-left: hidden;
 }
 
 .inquiry-table-btn {
-    width: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
 }
-
-.inquiry-table-btn>input {
-    float: right;
-    font-size: 20px;
-    color: white;
-    border: 0;
-    border-radius: 10%;
-    margin-top: 1vh;
-    padding: 2px 5px;
-    background-color: #585858;
+.inquiry-table-btn > input:first-child {
+  width: 100%;
+  font-size: 20px;
+  color: black;
+  border: none;
+  box-sizing: border-box;
+  margin-top: 1vh;
+  margin-right: 2vw;
+  padding: 5px 0;
+  background-color: #fff;
 }
-
-/* modal-container */
-.modal-container {
-    width: 87%;
-    height: 50%;
-    margin: 0 auto;
-    position: fixed;
-    opacity: 0;
-    z-index: -10;
-    background-color: #fff;
-    border: 1px solid black;
-    border-radius: 3px;
-    box-shadow: 1px 1px 5px black;
-    text-align: left;
-    transition: opacity 0.3s;
-}
-
-.modal-container>div>* {
-    margin: 5px 8px;
-}
-
-.modal-container>div>h3:last-child {
-    margin-top: 50px;
-}
-
-.modal-container-ccbtn>input {
-    float: left;
-    color: gainsboro;
-    width: 47%;
-    border: none;
-    background: none;
-}
-
-.modal-container-sbbtn>input {
-    float: right;
-    color: darkturquoise;
-    width: 47%;
-    border: none;
-    background: none;
+.inquiry-table-btn > input:last-child {
+  font-size: 20px;
+  color: white;
+  border: 0;
+  border-radius: 10%;
+  margin-top: 1vh;
+  padding: 2px 5px;
+  background-color: #585858;
 }

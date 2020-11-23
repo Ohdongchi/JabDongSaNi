@@ -5,6 +5,8 @@ import Home from '../component/Home/HomeRouter';
 import Inquiry from '../component/Inquiry/InquiryRouter.jsx';
 import LoginPage from '../component/Header/LoginPage';
 import SignUpPage from '../component/Register/SignupPage';
+
+import Test from '../component/reducerTest/Test';
 const App = ()=> {
 
     const [sessionData, setSessionData] = useState(null);
@@ -31,6 +33,9 @@ const App = ()=> {
                     <Route path='/register' exact={true} render={()=> <SignUpPage signData={data}/>}/>
                 </Switch>
             </div>
+            {/* <div>
+                <Test />
+            </div> */}
         </header>
     );
 };
