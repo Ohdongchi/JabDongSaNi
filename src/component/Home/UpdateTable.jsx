@@ -26,7 +26,7 @@ const UpdateTable = () => {
         "id":4,
         "area":"경기도 여주시",
         "content":"4 번째 확진자",
-        "states":"확진 의심"
+        "states":"확진 "
       },
 ];
   return (
